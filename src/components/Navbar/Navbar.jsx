@@ -7,15 +7,18 @@ const menuItems = [
   {
     label: "POPULAR SERVICES",
     dropdown: [
-      { label: "ITR FILING SERVICES", link: "/ITR FILING SERVICE" },
-      { label: "ISO CERTIFICATION", link: "/ISO CERTIFICATION" },
-      { label: "GST REGISTRATION", link: "/GST REGISTRATION" },
-      { label: "GST RETURN FILING", link: "/GST RETURN FILING" },
-      { label: "MSME REGISTRATION", link: "/MSME REGISTRATION" },
-      { label: "COMPANY REGISTRATION", link: "/COMPANY REGISTRATION" },
-      { label: "FIRM REGISTRATION", link: "/FIRM REGISTRATION" },
-      { label: "FSSAI LICENCE", link: "/FSSAI REGISTRATION" },
-      { label: "TRENDMARK REGISTRATION", link: "/TRADEMARK" }
+      { label: "ITR FILING SERVICES", link: "/itr_filing_service" },
+      { label: "ISO CERTIFICATION", link: "/iso_certification" },
+      { label: "GST REGISTRATION", link: "/gst_registration" },
+      { label: "GST RETURN FILING", link: "/gst_return_filing" },
+      { label: "MSME REGISTRATION", link: "/msme_registration" },
+      { label: "COMPANY REGISTRATION", link: "/company_registration" },
+      { label: "FIRM REGISTRATION", link: "/firm_registration" },
+      { label: "FSSAI LICENCE", link: "/fssai_registration" },
+      { label: "TRENDMARK REGISTRATION", link: "/trademark" },
+      
+      
+      
     ],
   },
   {
@@ -41,16 +44,16 @@ const menuItems = [
   {
     label: "GST SERVICES",
     dropdown: [
-      { label: "GST REGISTRATION", link: "/GST REGISTRATION" },
-      { label: "GST RETURN FILING", link: "/GST RETURN FILING" },
+      { label: "GST REGISTRATION", link: "/gst_registration" },
+      { label: "GST RETURN FILING", link: "/gst_return_filing" },
     ],
   },
   {
     label: "SUPPORT",
     dropdown: [
-      { label: "CONTACT US", link: "/CONTACT US" },
-      { label: "AFFILIATE PARTNER", link: "/AFFILIATE PARTNER" },
-      { label: "REVIEW", link: "/REVIEW" },
+      { label: "CONTACT US", link: "/contact_us" },
+      { label: "AFFILIATE PARTNER", link: "/affiliate_partner" },
+      { label: "REVIEW", link: "/review" },
     ],
   },
 ];
@@ -81,13 +84,28 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-gradient-to-r from-purple-600 to-purple-500 px-4 py-3 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-1 rounded p-2">
-          <Link to="/">
-            <img
-              src="logo.jpg"
-              alt="Logo"
-              className="h-20 w-20 object-contain"
-            />
+        <div className="flex items-center space-x-2 rounded-lg p-3 bg-white/10 hover:bg-white/20 transition-all duration-300">
+          <Link to="/" className="flex items-center space-x-3 group">
+            {/* Logo Icon */}
+            <div className="flex items-center justify-center w-10 h-10 bg-white rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300">
+              <svg 
+                className="w-6 h-6 text-purple-600" 
+                fill="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/>
+                <path d="M8 12h8v2H8zm0 4h5v2H8z"/>
+              </svg>
+            </div>
+            {/* Logo Text */}
+            <div className="flex flex-col">
+              <span className="text-white font-bold text-xl tracking-wide group-hover:text-purple-100 transition-colors duration-300">
+                Smart Files
+              </span>
+              <span className="text-purple-200 text-xs font-medium tracking-wider uppercase">
+                Solutions
+              </span>
+            </div>
           </Link>
         </div>
         {/* Desktop Menu */}
@@ -119,7 +137,7 @@ const Navbar = () => {
                 </button>
                 {/* Dropdown */}
                 {openDropdown === idx && (
-                  <div className="absolute left-0 top-5 mt-2 w-56 bg-white rounded shadow-lg z-10 transition-all duration-200 ease-in-out">
+                  <div className="absolute -left-4 top-5 mt-2 w-56 bg-white rounded shadow-lg z-10 transition-all duration-200 ease-in-out">
                     {item.dropdown.map((option, optIdx) =>
                       option.dropdown ? (
                         <div key={option.label} className="group relative">

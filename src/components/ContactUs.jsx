@@ -35,7 +35,8 @@ const ITRFilingService = () => {
 
   return (
     <div className="min-h-[30vh] bg-gray-50 flex flex-col justify-start items-center pt-8 pb-0">
-      <h1 className="text-3xl md:text-5xl font-bold text-purple-700 mb-2">Income Tax eFiling</h1>
+      <h1 className="text-3xl md:text-5xl font-bold text-purple-700 mb-2">We’re Here to Help !
+      </h1>
       <div className="w-full flex flex-col items-center">
         <span className="text-base md:text-lg font-medium text-green-700 my-4 text-center drop-shadow-sm">Now File ITR Online with India's Largest Tax Consultant at Affordable Cost</span>
         <button

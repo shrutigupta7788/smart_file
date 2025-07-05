@@ -49,27 +49,28 @@ function App() {
         <Route path="/book-consultancy/form" element={<BookConsultancyForm />} />
         <Route path="/book-consultancy/thank-you" element={<ConsultancyThankYou />} />
         <Route path="/why-choose-us" element={<WhyChooseUs />} />
-        <Route path="/ITR FILING SERVICE" element={<ITRFilingService />} />
-        <Route path="/ISO CERTIFICATION" element={<IsoCertification />} />
-        <Route path="/GST REGISTRATION" element={<GstRegistration />} />
-        <Route path="/GST RETURN FILING" element={<GstReturnFiling />} />
-        <Route path="/MSME REGISTRATION" element={<MsmeRegistration />} />
-        <Route path="/COMPANY REGISTRATION" element={<CompanyRegistration />} />
-        <Route path="/FIRM REGISTRATION" element={<FirmRegistration />} />
-        <Route path="/FSSAI REGISTRATION" element={<FssaiRegistration />} />
-        <Route path="/TRADING LICENCE" element={<TradingLicence />} />
-        <Route path="/TRADEMARK" element={<Trademark />} />
-        <Route path="/ REGISTRATION" element={<FirRegistration />} />
+        <Route path="/itr_filing_service" element={<ITRFilingService />} />
+        <Route path="/iso_certification" element={<IsoCertification />} />
+        <Route path="/gst_registration" element={<GstRegistration />} />
+        <Route path="/gst_return_filing" element={<GstReturnFiling />} />
+        <Route path="/msme_registration" element={<MsmeRegistration />} />
+        <Route path="/company_registration" element={<CompanyRegistration />} />
+        <Route path="/firm_registration" element={<FirmRegistration />} />
+        <Route path="/fssai_registration" element={<FssaiRegistration />} />
+        <Route path="/trading_licence" element={<TradingLicence />} />
+        <Route path="/trademark" element={<Trademark />} />
+        <Route path="/registration" element={<FirRegistration />} />
         <Route path="/private-limited-company-registration" element={<PrivateLimitedCompanyRegistration />} />
         <Route path="/llp-registration" element={<LlpRegistration />} />
         <Route path="/one-person-company-registration" element={<OnePersonCompanyRegistration />} />
         <Route path="/proprietorship-registration" element={<ProprietorshipRegistration />} />
         <Route path="/partnership-firm-registration" element={<PartnershipFirmRegistration />} />
-        <Route path="/CONTACT US" element={<ContactUs />} />
-        <Route path="/AFFILIATE PARTNER" element={<AffiliatePartner />} />
-        <Route path="/REVIEW" element={<Review />} />
+        <Route path="/contact_us" element={<ContactUs />} />
+        <Route path="/affiliate_partner" element={<AffiliatePartner />} />
+        <Route path="/review" element={<Review />} />
         <Route path="/iso-certification-info" element={<IsoCertificationInfo />} />
         <Route path="/itr-type-and-guide" element={<ITRTypeAndGuide />} />
+        
         {/* Add more routes as needed */}
       </Routes>
       <Footer />

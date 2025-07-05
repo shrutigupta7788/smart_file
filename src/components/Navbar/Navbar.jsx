@@ -77,7 +77,7 @@ const Navbar = () => {
     closeTimer.current = setTimeout(() => {
       setOpenDropdown(null);
       setOpenSubmenu(null);
-    }, 400); // 400ms delay to close
+    }, 400); // 400ms delay to closee
   };
 
   return (
